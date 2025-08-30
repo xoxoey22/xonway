@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Web App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .status {
+            background: linear-gradient(45deg, #2ecc71, #27ae60);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 1.5rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .feature h3 {
+            color: #34495e;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature p {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        .docker-info {
+            background: rgba(52, 73, 94, 0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+        }
+
+        .docker-info h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .docker-info p {
+            color: #7f8c8d;
+            font-family: 'Courier New', monospace;
+            background: rgba(0, 0, 0, 0.05);
+            padding: 0.5rem;
+            border-radius: 5px;
+            margin: 0.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 2rem;
+                margin: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐳 Docker Web App</h1>
+        <p class="subtitle">Successfully containerized and running!</p>
+        
+        <div class="status">✅ Container Status: Running</div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>🚀 Fast</h3>
+                <p>Lightweight container with optimized performance</p>
+            </div>
+            <div class="feature">
+                <h3>🔒 Secure</h3>
+                <p>Isolated environment with minimal attack surface</p>
+            </div>
+            <div class="feature">
+                <h3>📱 Responsive</h3>
+                <p>Works perfectly on all devices and screen sizes</p>
+            </div>
+        </div>
+        
+        <div class="docker-info">
+            <h3>🐳 Docker Information</h3>
+            <p><strong>Image:</strong> nginx:alpine</p>
+            <p><strong>Port:</strong> 80</p>
+            <p><strong>Status:</strong> Healthy</p>
+        </div>
+    </div>
+</body>
+</html>
